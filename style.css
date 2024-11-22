@@ -1,0 +1,247 @@
+* {
+    font-family: "Playwrite DE Grund", cursive;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-size: cover;
+    min-height: 900vh;
+    overflow-x: hidden;
+}
+
+/* Menu Lateral */
+nav.menu-lateral {
+    width: 55px;
+    height: 100vh;
+    background-color: #202020;
+    padding: 50px 0 100px 1%;
+    box-shadow: 1px 0 0 #ff6961;
+    position: fixed;
+    top: 0;
+    left: -10px;
+    overflow: hidden;
+    transition: 0.2s;
+    opacity: 0.9;
+    z-index: 1000;
+}
+
+nav.menu-lateral:hover {
+    width: 250px;
+}
+
+.btn-expandir {
+    width: 100%;
+    padding-left: 10px;
+}
+
+.btn-expandir > i {
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+ul {
+    height: 100%;
+    list-style-type: none;
+}
+
+ul li.item-menu {
+    transition: 0.5s;
+}
+
+ul li.ativo {
+    background-color: #ff6961;
+}
+
+ul li.item-menu:hover {
+    background: #ff6961;
+}
+
+ul li.item-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    padding: 20px 1% 10px;
+    display: flex;
+    margin-bottom: -10px;    
+    line-height: 10px;
+}
+
+ul li.item-menu a .txt-link {
+    margin-left: 25px;
+}
+
+ul li.item-menu a .icon > i {
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+/* Slider */
+.slider {
+    margin: 0 auto;
+    width: 700px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 15px;
+    position: relative;
+}
+
+.slides {
+    width: 150%;
+    height: 100%;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 16.666%;
+    position: relative;
+    transition: 2s;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.responsive-img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* Navegação Manual */
+.manual-navigation {
+    position: absolute;
+    width: 100%;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 0 8px;
+}
+
+.manual-btn:hover {
+    background-color: blue;
+}
+
+/* Controle do Slider */
+#radio1:checked ~ .slides {
+    transform: translateX(0);
+}
+
+#radio2:checked ~ .slides {
+    transform: translateX(-25%);
+}
+
+#radio3:checked ~ .slides {
+    transform: translateX(-50%);
+}
+
+#radio4:checked ~ .slides {
+    transform: translateX(-75%);
+}
+
+#radio5:checked ~ .slides {
+    transform: translateX(-100%);
+}
+
+#radio6:checked ~ .slides {
+    transform: translateX(-125%);
+}
+
+/* Navegação Automática */
+.navigation-auto {
+    position: absolute;
+    width: 100%;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-auto div {
+    border: 2px solid #ff6961;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 0 8px;
+    transition: 1s;
+}
+
+/* Indica o slide ativo */
+#radio1:checked ~ .navigation-auto .auto-btn1,
+#radio2:checked ~ .navigation-auto .auto-btn2,
+#radio3:checked ~ .navigation-auto .auto-btn3,
+#radio4:checked ~ .navigation-auto .auto-btn4,
+#radio5:checked ~ .navigation-auto .auto-btn5,
+#radio6:checked ~ .navigation-auto .auto-btn6 {
+    background-color: white;
+}
+
+p {
+    text-indent: 100px;
+}
+
+h3 {
+    text-indent:25px ;
+}
+
+h2 {
+    text-indent: 25px;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+
+}
+
+.card {
+    margin: 150px;
+    background-color:yellow;   
+    width: 350px;
+    height: 300px;
+    border-radius: 15px;   
+    border-top-left-radius: 15px; 
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.card img { 
+    width: 90%; 
+    margin-left: 7px; 
+    margin-top: 7px;
+    border-radius: 15px;
+} 
+
+.card-content { 
+    padding: 10px; 
+}
+
+.card button {
+    margin: 50px; 
+    margin-top: 10px;   
+    text-align: justify;
+    border-radius: 10px;
+    background-color: rgb(1, 1, 255);
+    width: 80px;
+    
+    
+}
+

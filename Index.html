@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo dos Gamers Pro</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap"
+        rel="stylesheet">
+
+    <style>
+        body {
+            background-image: url("bg1.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            font-size: 2vw;
+        }
+
+        head title {
+            text-align: center;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        h2 {
+            text-align: center;
+            color: rgb(253, 250, 250);
+            font: normal 20pt "Playwrite DE Grund";
+            text-shadow: 2px 2px 5px gray;
+        }
+
+        h3 {
+            text-align: center;
+            color: rgb(253, 250, 250);
+            font: normal 12pt "Playwrite DE Grund";
+            text-shadow: 2px 2px 5px gray;
+        }
+
+        h4 {
+            text-align: center;
+            color: rgb(0, 0, 0);
+            font: normal 8pt "Playwrite DE Grund";
+            text-shadow: 2px 2px 5px gray;
+        }
+
+        h5 {
+            text-align: center;
+            color: rgb(255, 255, 255);
+            font: normal 7pt "Playwrite DE Grund";
+            text-shadow: 2px 2px 5px gray;
+        } 
+        
+        h6 {
+            text-align: center;
+            color: rgb(0, 0, 0);
+            font: normal 7pt "Playwrite DE Grund";
+            text-shadow: 2px 2px 5px gray;
+        }
+        
+        .sombra-texto {
+            font-size: 12px;
+            color: rgb(253, 250, 250);
+            text-shadow: 2px 2px 5px gray;
+        }
+
+        .slider {
+            text-align: center;
+            width: 1350px;
+            height: auto;
+        }
+
+        .slides {
+            display: flex;
+            width: 400%;
+            animation: slide 45s ease-in-out 0.5s infinite alternate-reverse backwards;
+        }
+
+        .slides img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .p {
+            text-align: justify;
+            color: rgb(253, 250, 250);
+            font: normal 12pt "Playwrite DE Grund";
+            text-shadow: 2px 2px 5px gray;
+            border: 1px solid transparent;
+            margin: 50px;
+            padding: 1px;
+            margin-bottom: 10px;
+        }
+
+        .texto-com-imagem {
+            background-image: url("gtachar.png");
+            background-size: cover;
+            background-position: left;
+            color: white;
+            padding: 0px;
+            font-size: 24px;
+            text-align: justify;
+            width: 1400px;
+            height: 1000px;
+            display: flex;
+
+
+        }
+
+        .conteiner {
+            max-width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        /* Estilize o contêiner do vídeo */
+        .video-container {
+            position: relative;
+            width: 640px;
+            height: 360px;
+            overflow: hidden;
+            border: 3px solid #000;
+            border-radius: 15px;
+            background-color: #000;
+            margin: 0 auto;
+        }
+
+        /* Estilize o próprio elemento de vídeo */
+        video {
+            width: 100%;
+            height: 100%;
+            display: block;
+            
+        }
+
+        /* Estilização adicional para os controles do vídeo */
+        video::-webkit-media-controls {
+            background-color: rgba(156, 156, 156, 0); /* Fundo claro translúcido */
+            color: #fff;
+        }
+
+        /* Para aplicar estilo aos controles de vídeo no Firefox */
+        video::-moz-media-controls {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+        }
+
+        .button {
+            justify-content: center;
+            text-align: center;
+        }
+
+     
+
+        @keyframes slide {
+            0% {
+                transform: translateX(0%);
+            }
+
+            25% {
+                transform: translateX(-100%);
+            }
+
+            50% {
+                transform: translateX(-200%);
+            }
+
+            75% {
+                transform: translateX(-300%);
+            }
+
+            100% {
+                transform: translateX(0%);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="banner">
+            <img src="Video-Game-Transparent-Free-PNG.png" alt="Banner" class="responsive-img">
+        </div>
+        <br>
+        <div class="title">
+            <h2>MUNDO DOS GAMERS PRO</h2>
+            <h3 class="sombra-texto">Aqui você encontra a maior variedade de itens para Gamers, do Brasil!</h3>
+        </div>
+        <br>
+    </header>
+
+    <div class="slider">
+        <div class="slides">
+
+            <div class="slide">
+                <img src="ps5.png" alt="PlayStation 5" class="responsive-img">
+            </div>
+            <div class="slide">
+                <img src="xbox.png" alt="Xbox" class="responsive-img">
+            </div>
+            <div class="slide">
+                <img src="nintendo.png" alt="Nintendo" class="responsive-img">
+            </div>
+            <div class="slide">
+                <img src="note1.png" alt="Notebook 1" class="responsive-img">
+            </div>
+            <div class="slide">
+                <img src="note2.png" alt="Notebook 2" class="responsive-img">
+            </div>
+            <div class="slide">
+                <img src="Produtos/produto1.jpg" alt="produto1" class="responsive-img">
+            </div>
+            <div class="slide">
+                <img src="Produtos/produto2.png" alt="produto2" class="responsive-img">
+            </div>
+            <div class="slide">
+                <img src="Produtos/produto3.jpg" alt="produto3" class="responsive-img">
+            </div>
+            <div class="slide">
+                <img src="Produtos/produto4.jpg" alt="produto4" class="responsive-img">
+            </div>
+            <div class="slide">
+                <img src="Produtos/produto5.jpg" alt="produto5" class="responsive-img">
+            </div>
+            <div class="slide">
+                <img src="Produtos/produto6.jpg" alt="produto6" class="responsive-img">
+            </div>
+            <div class="slide">
+                <img src="Produtos/produto7.jpg" alt="produto7" class="responsive-img">
+            </div>
+            <div class="slide">
+                <img src="Produtos/produto8.jpg" alt="produto8" class="responsive-img">
+            </div>
+            <div class="slide">
+                <img src="Produtos/produto9.png" alt="produto9" class="responsive-img">
+            </div>
+            <div class="slide">
+                <img src="Produtos/produto10.jpg" alt="produto10" class="responsive-img">
+            </div>
+            <div class="slide">
+                <img src="Produtos/produto11.jpg" alt="produto11" class="responsive-img">
+            </div>
+            <div class="slide">
+                <img src="Produtos/produto12.png" alt="produto12" class="responsive-img">
+            </div>
+
+
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+                <div class="auto-btn5"></div>
+                <div class="auto-btn6"></div>
+                <div class="auto-btn7"></div>
+                <div class="auto-btn8"></div>
+                <div class="auto-btn9"></div>
+                <div class="auto-btn10"></div>
+                <div class="auto-btn11"></div>
+                <div class="auto-btn12"></div>
+                <div class="auto-btn13"></div>
+                <div class="auto-btn14"></div>
+                <div class="auto-btn15"></div>
+                <div class="auto-btn16"></div>
+                <div class="auto-btn17"></div>
+                <div class="auto-btn18"></div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <br><br>
+    <div class="container">
+        <div class="h2">
+            <h2>Mercado de Games para 2025</h2>
+        </div>
+    </div>
+
+    <video width="700px" height="360" controls class="video-container" poster="bannergames2.png" class="responsive-img">
+        <source src="Video/vgames.MP4" type="video/mp4">
+
+    </video>
+
+    <p class="p">O mercado gamer é um dos setores mais dinâmicos e inovadores da indústria de entretenimento, e
+        sua evolução ao longo das últimas décadas prova sua capacidade de adaptação e crescimento. Em 2025, o
+        mercado de games promete alcançar um novo patamar com o avanço de tecnologias como a realidade virtual
+        (VR), a inteligência artificial (IA) e a conectividade 5G, que estão transformando não apenas a
+        experiência do jogador, mas também a forma como o conteúdo é produzido e distribuído. Este cenário leva
+        a um questionamento essencial: o que podemos esperar dos lançamentos de games em 2025, e o que podemos
+        esperar como novidades aqui na loja Mundo dos Gamers Pro?</p>
+    <p class="p">A indústria de games registrou um crescimento vertiginoso nos últimos anos, alcançando uma
+        estimativa de 159,3 bilhões de dólares em receita em 2024, de acordo com a Newzoo, empresa especializada
+        em pesquisas de mercado para o setor. Este número é impulsionado tanto pelo desenvolvimento de novas
+        tecnologias quanto pela demanda crescente por jogos que atendam aos mais variados perfis de jogadores,
+        desde os casuais até os profissionais de E-Sports. Nós da Mundo dos Gamers Pro oferecemos o melhor
+        serviço pré e pós venda, tudo pelo seu bem estar e segurança.</p>
+    <p class="p">A inteligência artificial tem sido uma aliada na criação de personagens mais complexos e realistas. Com
+        a IA, os NPCs (personagens não jogáveis) podem responder de forma mais autêntica às ações do jogador, oferecendo
+        desafios adaptáveis e uma narrativa mais envolvente. Para 2025, a expectativa é que as desenvolvedoras avancem
+        ainda mais, com a IA permitindo que os jogos se adaptem em tempo real às habilidades e preferências do jogador.
+    </p>
+    <p class="p">Uma grande promessa é a chamada “IA generativa”, que permite a criação procedural de ambientes e
+        histórias,
+        tornando os jogos menos previsíveis e mais customizados. A Ubisoft, por exemplo, já anunciou o desenvolvimento
+        de ferramentas que utilizam IA para criar diálogos e missões dinâmicas, garantindo uma experiência única para
+        cada jogador. Essa abordagem pode também contribuir para reduzir o tempo de desenvolvimento dos jogos,
+        permitindo que novas versões e atualizações cheguem mais rapidamente ao mercado.</p><br>
+
+
+    <div>
+        <img src="bannergames3.png" alt="banner" class="responsive-img">    
+        <img src="novidades.png" alt="banner" class="responsive-img">
+    </div>
+    <div class="main">
+        <div class="card card1">
+            <img src="nintendo.png" alt="imagem1" class="responsive-img">
+            <h4>NINTENDO SWICH</h4>
+            <br>
+            <h6>R$1600,00</h6>            
+            <button type="button" onclick="alert('item enviado ao carrinho de compras!')"> <h5>adicionar ao carrinho</h5></button>
+            
+        </div>
+        <div class="card card2">
+            <img src="Produtos/produto1.jpg" alt="imagem2" class="responsive-img">
+            <h4>PLAYSTATION 4</h4>
+            <br>
+            <h6>R$3500,00</h6> 
+            <button type="button" onclick="alert('item enviado ao carrinho de compras!')"> <h5>adicionar ao carrinho</h5></button>
+        </div>
+        <div class="card card3">
+            <img src="Produtos/produto2.png" alt="imagem3" class="responsive-img">
+            <h4>XBOX ONE S</h4>
+            <br>
+            <h6>R$2600,00</h6> 
+            <button type="button" onclick="alert('item enviado ao carrinho de compras!')"> <h5>adicionar ao carrinho</h5></button>
+        </div>     
+    </div>
+    <div class="main">
+        <div class="card card4">
+            <img src="Produtos/produto3.jpg" alt="imagem4" class="responsive-img">
+            <br>
+            <h4>PS VITA</h4>
+            <h6>R$1300,00</h6>
+            <br><br>
+            <button type="button" onclick="alert('item enviado ao carrinho de compras!')"> <h5>adicionar ao carrinho</h5></button>
+        </div>
+        <div class="card card5">
+            <img src="Produtos/produto4.jpg" alt="imagem5" class="responsive-img">
+            <h4>HEADSET GAMER</h4>
+            <h4>SKULL</h4>            
+            <h6>R$1200,00</h6> 
+            <button type="button" onclick="alert('item enviado ao carrinho de compras!')"> <h5>adicionar ao carrinho</h5></button>
+        </div>
+        <div class="card card6">
+            <img src="Produtos/produto5.jpg" alt="imagem6" class="responsive-img">
+            <h4>HEADSET GAMER</h4>
+            <h4>KITTY</h4>            
+            <h6>R$1500,00</h6> 
+            <button type="button" onclick="alert('item enviado ao carrinho de compras!')"> <h5>adicionar ao carrinho</h5></button>
+        </div>     
+    </div>
+    <div class="main">
+        <div class="card card7">
+            <img src="Produtos/produto6.jpg" alt="imagem7" class="responsive-img">
+            <h4>CADEIRA GAMER</h4>
+            <h4>RED</h4>
+            <h6>R$800,00</h6>
+            <button type="button" onclick="alert('item enviado ao carrinho de compras!')"> <h5>adicionar ao carrinho</h5></button>
+        </div>
+        <div class="card card8">
+            <img src="Produtos/produto7.jpg" alt="imagem8" class="responsive-img">
+            <h4>CADEIRA GAMER</h4>
+            <h4>GREEN</h4>
+            <h6>R$1000,00</h6>
+            <button type="button" onclick="alert('item enviado ao carrinho de compras!')"> <h5>adicionar ao carrinho</h5></button>
+        </div>
+        <div class="card card9">
+            <img src="Produtos/produto8.jpg" alt="imagem9" class="responsive-img">
+            <h4>JOGO DARK SOULS</h4>
+            <h6>R$150,00</h6>
+            <br>
+            <button type="button" onclick="alert('item enviado ao carrinho de compras!')"> <h5>adicionar ao carrinho</h5></button>
+        </div>     
+    </div>
+    <div class="main">
+        <div class="card card10">
+            <img src="Produtos/produto9.png" alt="imagem10" class="responsive-img">
+            <h4>JOGO GOD OF WAR</h4>
+            <h4>RAGNAROK</h4>
+            <h6>R$320,00</h6>
+            <button type="button" onclick="alert('item enviado ao carrinho de compras!')"> <h5>adicionar ao carrinho</h5></button>
+        </div>
+        <div class="card card11">
+            <img src="Produtos/produto10.jpg" alt="imagem11" class="responsive-img">
+            <h4>PLAYSTATION 5</h4>
+            <h4>EDIÇÃO HOMEM ARANHA</h4>
+            <h6>R$5500,00</h6>
+            <button type="button" onclick="alert('item enviado ao carrinho de compras!')"> <h5>adicionar ao carrinho</h5></button>
+        </div>
+        <div class="card card12">
+            <img src="Produtos/produto11.jpg" alt="imagem12" class="responsive-img">
+            <h4>JOGO BLADE</h4>
+            <h6>R$200,00</h6>
+            <br>
+            <button type="button" onclick="alert('item enviado ao carrinho de compras!')"> <h5>adicionar ao carrinho</h5></button>
+        </div>     
+    </div>
+
+
+    <nav class="menu-lateral">
+        <div class="btn-expandir">
+            <i class="bi bi-card-list" id="btn-exp"></i>
+        </div>
+        <ul>
+            <li class="item-menu ativo">
+                <a href="#Home">
+                    <span class="icon"><i class="bi bi-house"></i></span>
+                    <span class="txt-link">Home</span>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="#Computadores Gamers">
+                    <span class="icon"><i class="bi bi-pc"></i></span>
+                    <span class="txt-link">Computadores Gamers</span>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="#Consoles">
+                    <span class="icon"><i class="bi bi-controller"></i></span>
+                    <span class="txt-link">Consoles</span>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="#Jogos para Consoles">
+                    <span class="icon"><i class="bi bi-xbox"></i></span>
+                    <span class="txt-link">Jogos para Consoles</span>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="#Jogos para Computador">
+                    <span class="icon"><i class="bi bi-pc-display"></i></span>
+                    <span class="txt-link">Jogos para Computador</span>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="#Action Figures">
+                    <span class="icon"><i class="bi bi-heart-arrow"></i></span>
+                    <span class="txt-link">Action Figures</span>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="#Login">
+                    <span class="icon"><i class="bi bi-door-open-fill"></i></span>
+                    <span class="txt-link">Login</span>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="#Cadastro">
+                    <span class="icon"><i class="bi bi-door-open"></i></span>
+                    <span class="txt-link">Cadastro</span>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="#Meu Carrinho">
+                    <span class="icon"><i class="bi bi-cart4"></i></span>
+                    <span class="txt-link">Meu Carrinho</span>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="#Info">
+                    <span class="icon"><i class="bi bi-info-square"></i></span>
+                    <span class="txt-link">Info</span>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="#Não Clique Aqui">
+                    <span class="icon"><i class="bi bi-sign-do-not-enter-fill"></i></span>
+                    <span class="txt-link">Não Clique Aqui</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <script>
+        window.addEventListener('load', function () {
+            alert("Fique a vontade em nosso site.");
+            if (confirm("Para informações importantes a respeito do site, consulte a aba 'mais informações'.")) {
+                let nome = prompt("Qual é o seu nome?");
+                alert("Muito prazer em te conhecer, " + nome + " , seja bem vindo(a)!");
+            }
+        });
+    </script>
+
+    <main id="#root">
+
+    </main>
+    <footer>
+        @Caiquerabelo
+    </footer>
+    <script src="index.js" type="module">
+
+    </script>
+</body>
+
+</html>
